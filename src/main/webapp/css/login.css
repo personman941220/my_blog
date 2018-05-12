@@ -6,7 +6,7 @@ body{
     background: url('../png/index.jpg') no-repeat;
     background-size:100%;
 }
-/*上述代码为使背景图自适应*/
+上述代码为使背景图自适应
 div.login {
     align-content:center;
     color:orangered;
@@ -15,4 +15,42 @@ div.login {
 h2.login{
     text-align:center;
     color:yellow;
+}
+/*过度*/
+.transtion{
+    width:300px;
+    height:300px;
+    opacity: 0;
+    background-color: #faffff;
+}
+html:hover .transtion{
+
+    /*过度效果*/
+    /*height:100%;*/
+    /*background-color: black;*/
+    /*-webkit-transition-delay: 150ms;*/
+    /*-moz-transition-delay: 150ms;*/
+    /*-ms-transition-delay: 150ms;*/
+    /*-o-transition-delay: 150ms;*/
+    /*transition-delay: 150ms;*/
+    /*-webkit-transition-duration: 500ms;*/
+    /*-moz-transition-duration: 500ms;*/
+    /*-ms-transition-duration: 500ms;*/
+    /*-o-transition-duration: 500ms;*/
+    /*transition-duration: 500ms;*/
+    /*transition-timing-function:ease;*/
+    /*动画效果*/
+    animation-name:navigation;
+    animation-delay:500ms;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+@keyframes navigation {
+    to{
+        width:33%;
+        height:100%;
+        background-color: black;
+        opacity:1;
+
+    }
 }

@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 
 <body>
-<h2 class="login">Hello World!</h2>
+<!--使用过度动画-->
+<p class="transtion"></p>
 </body>
 </html>
